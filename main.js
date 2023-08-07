@@ -6,8 +6,14 @@ keys.forEach(function(key){
 })
 
 // Write named functions that change the color of the keys below
-
-
+function keyPlay(event) {
+  const target = event.target;
+  target.style.backgroundColor = 'blue'; // Changer la couleur de fond des touches enfoncées à "blue"
+}  
+ function keyReturn(event) {
+   const target = event.target;
+   target.style.backgroundColor=''; // Retourne la valeur par defaut  
+ }
 // Write a named function with event handler properties
 
 
