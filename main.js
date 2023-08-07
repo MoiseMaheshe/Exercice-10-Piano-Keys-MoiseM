@@ -15,7 +15,8 @@ function keyPlay(event) {
    target.style.backgroundColor=''; // Retourne la valeur par defaut  
  }
 // Write a named function with event handler properties
-
+//function keyMo = document. queruSeclector('');
+keyMo.addEventlistener //('click', function(){alert('') })
 
 // Write a loop that runs the array elements through the function
 
