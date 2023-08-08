@@ -4,11 +4,11 @@ const notes = [];
 keys.forEach(function(key){
   notes.push(document.getElementById(key));
 })
-
+console.log(notes)
 // Write named functions that change the color of the keys below
 function keyPlay(event) {
   const target = event.target;
-  target.style.backgroundColor = 'blue'; // Changer la couleur de fond des touches enfoncées à "blue"
+  target.style.backgroundColor = "yellow"; // Changer la couleur de fond des touches enfoncées à "blue"
 }  
  function keyReturn(event) {
    const target = event.target;
@@ -17,13 +17,16 @@ function keyPlay(event) {
 // Write a named function with event handler properties
 //keyplay.addEventlistener('click', function(){alert('') })
 function touchesEvent(note){
-  note.addEventListener('mousedown',keyPlay);
-  note.addEventListener('mouseup', keyReturn);
+  note.addEventListener("mousedown",keyPlay);
+  note.addEventListener("mouseup", keyReturn);
+  
 } 
 
  
 
 // Write a loop that runs the array elements through the function
+notes.forEach(touchesEvent);
+  
 
 
 // These variables store the buttons that progress the user through the lyrics
