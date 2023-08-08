@@ -17,8 +17,11 @@ function keyPlay(event) {
 // Write a named function with event handler properties
 //keyplay.addEventlistener('click', function(){alert('') })
 function touchesEvent(note){
-  note.addEventListener('mousedown',keyPlay)
+  note.addEventListener('mousedown',keyPlay);
+  note.addEventListener('mouseup', keyReturn);
 } 
+
+ 
 
 // Write a loop that runs the array elements through the function
 
